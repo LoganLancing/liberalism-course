@@ -172,7 +172,6 @@ const sections = [
             <ul>
                 <li><strong>Legal Equality:</strong> Equal protection under the law without discrimination.</li>
                 <li><strong>Equality of Opportunity:</strong> Ensuring that societal structures do not unfairly hinder individuals based on arbitrary factors like race, gender, or socioeconomic status.</li>
-                <li><strong>Social Justice:</strong> Addressing systemic inequalities to create a fairer society.</li>
             </ul>
             <h3>Democratic Governance</h3>
             <p>Democracy is a fundamental aspect of Liberalism, emphasizing that government should be by the people and for the people.</p>
