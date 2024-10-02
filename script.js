@@ -295,8 +295,9 @@ function showSection(index) {
             ${sections[index].content}
         </div>
     `;
+    // Control the visibility of navigation buttons
     document.getElementById('prevBtn').style.display = index === 0 ? 'none' : 'inline-block';
-    document.getElementById('nextBtn').style.display = (index >= sections.length - 1) ? 'none' : 'inline-block';
+    document.getElementById('nextBtn').style.display = (index >= sections.length - 2) ? 'none' : 'inline-block';
 }
 
 // Function to go to the next section
@@ -304,7 +305,7 @@ function nextSection() {
     if (currentSection < sections.length - 1) {
         currentSection++;
         showSection(currentSection);
-        // Scroll to the top of the page smoothly
+        // Scroll to the top of the page
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 }
@@ -314,7 +315,7 @@ function prevSection() {
     if (currentSection > 0) {
         currentSection--;
         showSection(currentSection);
-        // Scroll to the top of the page smoothly
+        // Scroll to the top of the page
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 }
@@ -322,7 +323,6 @@ function prevSection() {
 // Function to handle quiz submission
 function submitQuiz() {
     const quizForm = document.getElementById('quizForm');
-    if (!quizForm) return; // Ensure the form exists
     const formData = new FormData(quizForm);
     let score = 0;
 
@@ -333,8 +333,7 @@ function submitQuiz() {
     if (formData.get('q5') === 'c') score++;
     if (formData.get('q6') === 'b') score++;
 
-    const quizResultDiv = document.getElementById('quizResult');
-    quizResultDiv.innerText = `You scored ${score} out of 6.`;
+    document.getElementById('quizResult').innerText = `You scored ${score} out of 6.`;
 
     if (score === 6) {
         alert('Excellent work! You have a strong understanding of the material.');
