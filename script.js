@@ -71,7 +71,7 @@ const sections = [
                 <li><strong>Thomas Reid:</strong> As previously discussed, Reid's common sense philosophy challenged skepticism and emphasized practical reasoning.</li>
             </ul>
             <h3>Impact on America:</h3>
-            <p>The ideas from the Scottish Enlightenment significantly influenced American intellectuals and the founding fathers. Many Americans studied in Scotland or were taught by Scottish professors. The emphasis on common sense, practical education, and moral philosophy resonated with American values and the challenges of building a new nation.</p>
+            <p>The ideas from the Scottish Enlightenment significantly influenced American intellectuals and the Founding Fathers. Many Americans studied in Scotland or were taught by Scottish professors. The emphasis on common sense, practical education, and moral philosophy resonated with American values and the challenges of building a new nation.</p>
             <p>Key areas of influence include:</p>
             <ul>
                 <li><strong>Education:</strong> American universities adopted Scottish educational models, emphasizing liberal arts and sciences.</li>
@@ -229,8 +229,46 @@ const sections = [
         content: `
             <h2>Interactive Quiz: Test Your Knowledge</h2>
             <p>Let's assess your understanding of the course material.</p>
-            <!-- Quiz content remains the same -->
-            <!-- (Include the updated quiz from the previous version) -->
+            <form id="quizForm">
+                <div class="quiz-question">
+                    <p><strong>1. Which of the following is a key idea proposed by John Locke?</strong></p>
+                    <label><input type="radio" name="q1" value="a"> The concept of social contract where people give up all rights to a sovereign.</label><br>
+                    <label><input type="radio" name="q1" value="b"> The notion that individuals have natural rights to life, liberty, and property.</label><br>
+                    <label><input type="radio" name="q1" value="c"> The idea that government should have absolute power to maintain order.</label>
+                </div>
+                <div class="quiz-question">
+                    <p><strong>2. What is the significance of the Scottish Enlightenment in the context of Liberalism?</strong></p>
+                    <label><input type="radio" name="q2" value="a"> It rejected the ideas of individualism and promoted collectivism.</label><br>
+                    <label><input type="radio" name="q2" value="b"> It emphasized common sense and practical reasoning as foundations for knowledge.</label><br>
+                    <label><input type="radio" name="q2" value="c"> It advocated for the return to traditional monarchical rule.</label>
+                </div>
+                <div class="quiz-question">
+                    <p><strong>3. The principle of the separation of powers is intended to:</strong></p>
+                    <label><input type="radio" name="q3" value="a"> Concentrate authority in a single branch of government.</label><br>
+                    <label><input type="radio" name="q3" value="b"> Ensure that different branches of government can check and balance each other.</label><br>
+                    <label><input type="radio" name="q3" value="c"> Allow the judiciary to overrule legislative decisions unilaterally.</label>
+                </div>
+                <div class="quiz-question">
+                    <p><strong>4. How did the United States Constitution embody the principles of Liberalism?</strong></p>
+                    <label><input type="radio" name="q4" value="a"> By establishing a hereditary monarchy with absolute power.</label><br>
+                    <label><input type="radio" name="q4" value="b"> By creating a federal system with checks and balances and protecting individual rights.</label><br>
+                    <label><input type="radio" name="q4" value="c"> By centralizing all power in the hands of the executive branch.</label>
+                </div>
+                <div class="quiz-question">
+                    <p><strong>5. Which of the following is NOT a core principle of Liberalism?</strong></p>
+                    <label><input type="radio" name="q5" value="a"> Individual Freedom</label><br>
+                    <label><input type="radio" name="q5" value="b"> Rule of Law</label><br>
+                    <label><input type="radio" name="q5" value="c"> Authoritarian Governance</label>
+                </div>
+                <div class="quiz-question">
+                    <p><strong>6. Why is the concept of 'Government by Consent' important in Liberalism?</strong></p>
+                    <label><input type="radio" name="q6" value="a"> It ensures that the government has absolute authority over its citizens.</label><br>
+                    <label><input type="radio" name="q6" value="b"> It means that governments are legitimate only if they have the consent of the people.</label><br>
+                    <label><input type="radio" name="q6" value="c"> It allows for the hereditary transfer of power.</label>
+                </div>
+                <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+            </form>
+            <div id="quizResult"></div>
         `
     },
     {
@@ -246,5 +284,56 @@ const sections = [
     }
 ];
 
-// JavaScript functions (navigation, quiz logic) remain the same as before.
+let currentSection = 0;
 
+function showSection(index) {
+    const contentDiv = document.getElementById('content');
+    contentDiv.innerHTML = `
+        <div class="section active">
+            ${sections[index].content}
+        </div>
+    `;
+    document.getElementById('prevBtn').style.display = index === 0 ? 'none' : 'inline-block';
+    document.getElementById('nextBtn').style.display = (index >= sections.length - 2) ? 'none' : 'inline-block';
+}
+
+function nextSection() {
+    if (currentSection < sections.length - 1) {
+        currentSection++;
+        showSection(currentSection);
+    }
+}
+
+function prevSection() {
+    if (currentSection > 0) {
+        currentSection--;
+        showSection(currentSection);
+    }
+}
+
+function submitQuiz() {
+    const quizForm = document.getElementById('quizForm');
+    const formData = new FormData(quizForm);
+    let score = 0;
+
+    if (formData.get('q1') === 'b') score++;
+    if (formData.get('q2') === 'b') score++;
+    if (formData.get('q3') === 'b') score++;
+    if (formData.get('q4') === 'b') score++;
+    if (formData.get('q5') === 'c') score++;
+    if (formData.get('q6') === 'b') score++;
+
+    document.getElementById('quizResult').innerText = `You scored ${score} out of 6.`;
+
+    if (score === 6) {
+        alert('Excellent work! You have a strong understanding of the material.');
+        currentSection++;
+        showSection(currentSection);
+    } else {
+        alert('Consider reviewing the course material to improve your understanding.');
+    }
+}
+
+window.onload = function() {
+    showSection(currentSection);
+};
