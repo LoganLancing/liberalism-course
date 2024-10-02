@@ -3,8 +3,8 @@ const sections = [
         title: 'Welcome to Liberalism: A Journey Through Time',
         content: `
             <h1>Liberalism: A Journey Through Time by @LoganLancing</h1>
-            <p>Welcome to an immersive exploration of Liberalism, tracing its roots, evolution, and profound impact on modern society. This course will guide you through the key moments and figures that shaped Liberalism, culminating in its influence on the founding of the United States.</p>
-            <p>This course is designed to be a comprehensive journey, taking you deep into the philosophical underpinnings, historical developments, and practical applications of Liberalism. By the end, you'll have a robust understanding of how Liberalism has shaped the modern world and how it continues to influence contemporary thought.</p>
+            <p>Welcome to a basic exploration of Liberalism, tracing its roots, evolution, and profound impact on the founding of the United States of America. This short course will guide you through the key moments and figures that shaped Liberalism, culminating in its influence on the founding of our great nation.</p>
+            <p>This course is designed to be a brief journey; something you can review over a lunch break. We'll discuss the philosophical underpinnings, historical developments, and practical applications of Liberalism. By the end, you'll have a basic understanding of how Liberalism has shaped America. My hope is that you'll be inspired to learn more so you can defend yourself, your family, and your community from those that seek to eliminate your cognitive liberty and enslave your mind</p>
         `
     },
     {
@@ -13,8 +13,8 @@ const sections = [
             <h2>Chapter 1: The Dawn of Enlightenment</h2>
             <p>The Age of Enlightenment, also known as the Age of Reason, was a pivotal period in European history that spanned the 17th and 18th centuries. It was characterized by a surge in intellectual exploration, scientific discoveries, and philosophical debates that challenged traditional authority and dogma.</p>
             <p>The Enlightenment thinkers believed in the power of human reason to understand the world and improve society. They promoted ideas such as liberty, progress, tolerance, fraternity, constitutional government, and separation of church and state.</p>
-            <div class="quote">"Common sense and reason both arise from the same root." — Thomas Reid</div>
-            <p>This era questioned long-held beliefs and sought to understand the world through observation and rational thought, laying the groundwork for modern philosophy and political thought.</p>
+            <div class="quote">"Let scholastic sophisters entangle themselves in their own cobwebs; I am resolved to take my own existence, and the existence of other things, upon trust; and to believe that snow is cold, and honey sweet, whatever they may say to the contrary. He must either be a fool, or want to make a fool of me, that would reason me out of my reason and senses." — Thomas Reid</div>
+            <p>This era questioned long-held beliefs and sought to understand the world through observation and rational thought, laying the groundwork for common-sense realist modern philosophy and political thought.</p>
         `
     },
     {
@@ -67,14 +67,13 @@ const sections = [
             <ul>
                 <li><strong>David Hume:</strong> Philosopher known for his empirical approach to human nature and skepticism about religion and metaphysics.</li>
                 <li><strong>Adam Smith:</strong> Economist and philosopher who wrote <em>"The Wealth of Nations,"</em> laying the foundations for classical economics and free-market capitalism.</li>
-                <li><strong>James Watt:</strong> Engineer whose improvements to the steam engine catalyzed the Industrial Revolution.</li>
                 <li><strong>Thomas Reid:</strong> As previously discussed, Reid's common sense philosophy challenged skepticism and emphasized practical reasoning.</li>
             </ul>
             <h3>Impact on America:</h3>
             <p>The ideas from the Scottish Enlightenment significantly influenced American intellectuals and the Founding Fathers. Many Americans studied in Scotland or were taught by Scottish professors. The emphasis on common sense, practical education, and moral philosophy resonated with American values and the challenges of building a new nation.</p>
             <p>Key areas of influence include:</p>
             <ul>
-                <li><strong>Education:</strong> American universities adopted Scottish educational models, emphasizing liberal arts and sciences.</li>
+                <li><strong>Education:</strong> American universities adopted English and Scottish educational models, emphasizing liberal arts and sciences.</li>
                 <li><strong>Philosophy:</strong> The pragmatic and ethical approaches informed American philosophical thought.</li>
                 <li><strong>Economics:</strong> Adam Smith's ideas influenced American economic policies promoting free trade and market economies.</li>
             </ul>
