@@ -3,6 +3,7 @@ const sections = [
         title: 'Welcome to Liberalism: A Journey Through Time',
         content: `
             <h1>Liberalism: A Journey Through Time</h1>
+            <h2>by @LoganLancing<h2>
             <p>Welcome to an immersive exploration of Liberalism, tracing its roots, evolution, and profound impact on modern society. This course will guide you through the key moments and figures that shaped Liberalism, culminating in its influence on the founding of the United States.</p>
             <p>This course is designed to be a comprehensive journey, taking you deep into the philosophical underpinnings, historical developments, and practical applications of Liberalism. By the end, you'll have a robust understanding of how Liberalism has shaped the modern world and how it continues to influence contemporary thought.</p>
         `
