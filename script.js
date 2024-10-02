@@ -277,7 +277,13 @@ const sections = [
             <p>We hope this journey has inspired you to think critically about the principles that underpin modern society and to engage actively in the ongoing dialogue about freedom, rights, and governance.</p>
             <p>Download the comprehensive cheat-sheet summarizing key concepts:</p>
             <a href="liberalism-cheatsheet.pdf" download class="download-btn">Download Cheat-Sheet</a>
-            <p>Thank you for participating in this course. Your journey of learning and exploration doesn't end here. Continue to question, learn, and contribute to the world around you.</p>
+            <p>Thank you for completing this course! If you found the content valuable, please consider making a donation to help me continue providing high-quality resources free of charge and without disruptive advertisements. Your support ensures that more learners can benefit from this content in the future.</p>
+            <!-- Donation Link -->
+    <p>
+        <a href="https://www.itsnotinschools.com/donate-and-support-this-work.html" target="_blank" rel="noopener noreferrer">
+            Donate and Support This Work
+        </a>
+    </p>
         `
     }
 ];
