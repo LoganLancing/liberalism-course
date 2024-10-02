@@ -4,7 +4,7 @@ const sections = [
         content: `
             <h1>Liberalism: A Journey Through Time by @LoganLancing</h1>
             <p>Welcome to a basic exploration of Liberalism, tracing its roots, evolution, and profound impact on the founding of the United States of America. This short course will guide you through the key moments and figures that shaped Liberalism, culminating in its influence on the founding of our great nation.</p>
-            <p>This course is designed to be a brief journey; something you can review over a lunch break. We'll discuss the philosophical underpinnings, historical developments, and practical applications of Liberalism. By the end, you'll have a basic understanding of how Liberalism has shaped America. My hope is that you'll be inspired to learn more so you can defend yourself, your family, and your community from those that seek to eliminate your cognitive liberty and enslave your mind</p>
+            <p>This course is designed to be a brief journey; something you can review over a lunch break. We'll discuss the philosophical underpinnings, historical developments, and practical applications of Liberalism. By the end, you'll have a basic understanding of how Liberalism has shaped America. My hope is that you'll be inspired to learn more so you can defend yourself, your family, and your community from those that seek to eliminate your cognitive liberty and enslave your mind.</p>
         `
     },
     {
