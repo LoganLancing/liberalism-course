@@ -112,7 +112,7 @@ const sections = [
             <h3>Impact on the World</h3>
             <p>The American experiment in Liberalism had a profound global impact:</p>
             <ul>
-                <li><strong>Inspiration for Other Nations:</strong> The success of the United States inspired democratic movements worldwide, including the French Revolution.</li>
+                <li><strong>Inspiration for Other Nations:</strong> The success of the United States inspired democratic movements worldwide.</li>
                 <li><strong>Advancement of Human Rights:</strong> The emphasis on universal rights laid the groundwork for future human rights declarations.</li>
                 <li><strong>Economic Innovation:</strong> Liberal economic policies fostered entrepreneurship and innovation, contributing to rapid growth.</li>
             </ul>
