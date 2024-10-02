@@ -94,22 +94,6 @@ button:hover {
     to { opacity: 1; transform: translateY(0); }
 }
 
-.philosophers {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.philosopher {
-    width: 48%;
-    margin-bottom: 20px;
-}
-
-.philosopher img {
-    width: 100%;
-    border-radius: 8px;
-}
-
 .quote {
     font-style: italic;
     background-color: #ecf0f1;
